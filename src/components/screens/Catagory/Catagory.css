@@ -1,0 +1,34 @@
+#Cat {
+    background:rgb(142, 218, 98);
+    height: 100vh;
+    padding-top: 10%;
+
+}
+
+.gory {
+    text-align: center;
+
+
+}
+.gory p {
+font-size: 40px;
+font-weight: bold;
+margin-bottom: 200px;
+
+}
+.gory {
+
+}
+.gory .a{
+       margin-left: 15px; 
+}
+.gory a.eng {
+    background: rgb(214, 23, 198);
+    padding: 40px 15px;
+    font-size: 30px;
+    border-radius: 14px;
+    margin-right: 15px;
+}
+.gory a.mal {
+   
+}

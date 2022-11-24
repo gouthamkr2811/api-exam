@@ -1,0 +1,59 @@
+#main {
+    background-color: aqua;
+    height: 100vh;
+}
+
+#header { 
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.wrapper {
+    width: 90%;
+}
+
+section#header div { 
+    
+}
+
+section#header div h1 { 
+
+}
+
+section#header div h1 img { 
+    width: 50%;
+    display: block;
+    margin-left: 50px;
+}
+
+section#header div.right { 
+    margin-left: 75%;
+}
+
+section#header div.right a { 
+    background: #000;
+    padding: 10px 30px;
+    color: blue;
+    border-radius: 10px;
+    text-decoration: none;
+
+}
+#center {
+
+}
+.starts {
+    text-align: center;
+    padding-top: 20%;
+
+}
+.starts a {
+    background: blueviolet;
+    padding: 22px 82px;
+    font-size: 31px;
+    border-radius: 45px;
+    text-decoration: none;
+    color: aqua;
+
+}

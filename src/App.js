@@ -1,24 +1,30 @@
-import logo from './logo.svg';
+
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+import Header from "./components/includes/Header/Header";
+import Login from './components/screens/Login/Login';
+import Catagory from './components/screens/Catagory/Catagory';
+import English from './components/screens/English/English';
+import Malayalam from './components/screens/Malayalam/Malayalam';
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+   
+      <Routes>
+        <Route  path="/login" element={<Login/>} />
+        <Route  path="/" element={ <Header/>} />
+        <Route  path="/starts" element={ <Catagory/>} />
+        <Route  path="/english" element={ <English/>} />
+        <Route  path="malayala" element={ <Malayalam/>} />
+
+
+      </Routes>
+    </Router>
   );
 }
 
