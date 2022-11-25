@@ -55,5 +55,10 @@ section#header div.right a {
     border-radius: 45px;
     text-decoration: none;
     color: aqua;
-
+}
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+    color: rgba(248, 41, 4, 0.993);
+    margin-left: 50px;
 }

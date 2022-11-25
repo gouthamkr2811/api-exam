@@ -1,6 +1,6 @@
 
 import {Link} from 'react-router-dom';
-
+import styled from 'styled-components';
 import './Login.css'
 
 
@@ -21,9 +21,12 @@ function Login() {
 
             <p className="error-message"></p>   
             <button type="submit">Login</button>
+            <Create to="/sing">Create Account</Create>
         </form>
     </section>
   );
 }
 
 export default Login
+
+const Create = styled(Link)``;

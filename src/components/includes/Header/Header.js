@@ -4,6 +4,10 @@ import './Header.css'
 import {Link} from 'react-router-dom';
 
 
+
+// import sample from './sample.mp4'
+
+
   import React from 'react'
 import styled from 'styled-components';
   
@@ -13,7 +17,8 @@ import styled from 'styled-components';
       <section id="header" className='wrapper'>
       <div className="nav-left">
         <h1>
-            <img src={require("../../../assets/images/images.jpeg")} alt="logo" />
+            {/* <img src={require("../../../assets/images/images.jpeg")} alt="logo" /> */}
+            Quiz
         </h1>
       </div>
       <div class="right">
@@ -26,6 +31,9 @@ import styled from 'styled-components';
        <Star to="/starts">START</Star>
      </div>
      </section>
+          {/* <video className='videoTag' autoPlay loop muted>
+          <source src={sample} type='video/mp4' />
+          </video> */}
      </section>
 
     )
