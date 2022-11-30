@@ -3,14 +3,14 @@ import React, { useEffect, useState } from 'react'
 import styled from 'styled-components';
 import {Link} from 'react-router-dom';
 
-import './Malayalam.css'
+import './English.css'
 
 import axios from "axios";
 export default function English() {
     const [english, setEnglish] = useState([]);
     useEffect(() => {
       axios
-      .get("http://127.0.0.1:8000/tasks/r/Quiz 6/")
+      .get("http://127.0.0.1:8000/tasks/r/Quiz 3/")
       .then(function (response) {
           // handle success
           console.log(response.data);
@@ -42,7 +42,7 @@ const render=(item)=>{
             <div class="main">
             <h1>{item.title}</h1>
             <form>{render(item)}</form>
-            <Button to="/malayala2">NEXT</Button>
+            <Button to="/english4">NEXT</Button>
             </div>
         )
     })}

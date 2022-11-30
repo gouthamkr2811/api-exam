@@ -8,8 +8,8 @@ import {Link} from 'react-router-dom';
 // import sample from './sample.mp4'
 
 
-  import React from 'react'
-import styled from 'styled-components';
+import React from 'react'
+import styled from 'styled-components'
   
   function Header() {
     return (

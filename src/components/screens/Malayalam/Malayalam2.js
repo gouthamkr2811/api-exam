@@ -10,7 +10,7 @@ export default function English() {
     const [english, setEnglish] = useState([]);
     useEffect(() => {
       axios
-      .get("http://127.0.0.1:8000/tasks/r/Quiz 6/")
+      .get("http://127.0.0.1:8000/tasks/r/Quiz 7/")
       .then(function (response) {
           // handle success
           console.log(response.data);
@@ -42,7 +42,7 @@ const render=(item)=>{
             <div class="main">
             <h1>{item.title}</h1>
             <form>{render(item)}</form>
-            <Button to="/malayala2">NEXT</Button>
+            <Button to="/malayala3">NEXT</Button>
             </div>
         )
     })}

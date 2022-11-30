@@ -1,29 +1,63 @@
+// import './English.css';
+import React, { useEffect, useState } from 'react'
+import styled from 'styled-components';
+import {Link} from 'react-router-dom';
 
-import './English.css';
-import React from 'react'
+import './English.css'
 
-function English() {
-  return (
-    
-    <section id="Quiss">
-    
-        <div class="main">
-            <p>In which decade was the American Institute of Electrical Engineers (AIEE) founded?</p>
-            <form>
-            <input type="radio" name="colors" id="red"/>
-            <label for="">A.	1850s</label>
-            <input type="radio" name="colors" id="blue"/>
-            <label for="">A.	1850s</label>
-            <input type="radio" name="colors" id="blue"/>
-            <label for="">A.	1850s</label>
-            <input type="radio" name="colors" id="blue"/>
-            <label for="">A.	1850s</label>
-            </form>
-            <h5>The IEEE (Institute of Electrical and Electronics Engineers) was formed in 1963 by the merger of the Institute of Radio Engineers (IRE, founded 1912) and the American Institute of Electrical Engineers (AIEE, founded 1884).</h5>
-            <button type="">NEXT</button>
+import axios from "axios";
+export default function English() {
+    const [english, setEnglish] = useState([]);
+    useEffect(() => {
+      axios
+      .get("http://127.0.0.1:8000/tasks/r/Quiz 1/")
+      .then(function (response) {
+          // handle success
+          console.log(response.data);
+          setEnglish(response.data);
+      })
+      .catch(function (error) {
+          // handle error
+          console.log(error);
+      });
+  }, []);
+const render=(item)=>{
+    return item.answer.map((i)=>{
+
+        return (
+          <div>
+        <input type="radio" name="colors" id="red"/>
+        <label for="">{i.answer_text}</label>
         </div>
-    </section>
-  )
+        )
+    })
 }
 
-export default English
+  return (
+    <>
+     <section id="Quiss">
+    
+     {english.map((item)=>{
+        return(
+            <div class="main">
+            <h1>{item.title}</h1>
+            <form>{render(item)}</form>
+            <Button to="/english2">NEXT</Button>
+            </div>
+        )
+    })}
+</section>
+
+    
+    </>
+  )
+}
+// export default English
+
+const Button = styled(Link)`
+   padding: 10px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background: darkgoldenrod;
+    margin-bottom: 40px;
+`;

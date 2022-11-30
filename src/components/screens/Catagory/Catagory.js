@@ -10,7 +10,7 @@ function Catagory() {
         <div class="gory">
             <p>Choose Language</p>
             <Emg to="/english"class="eng">English</Emg>
-            <Mal to="/english" class="mal" >മലയാളം</Mal>
+            <Mal to="/malayala" class="mal" >മലയാളം</Mal>
         </div>
     </section>
   )
