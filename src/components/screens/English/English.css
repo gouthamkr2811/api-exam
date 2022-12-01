@@ -71,6 +71,9 @@ button {
 h1 {
     font-size: 20px;
     font-weight: bold;
-    background: rgb(205, 219, 219);
-    margin-left: 50px;
+    /* background: rgb(205, 219, 219); */
+    /* margin-left: 50px; */
+}
+.main form label :nth-child(2) {
+        padding: 10px;
 }

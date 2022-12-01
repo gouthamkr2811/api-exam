@@ -1,0 +1,79 @@
+#Quiss {
+    border: 1px solid;
+    width: 56%;
+    margin: 0 auto;
+    padding-top: 10%;
+    background: rgb(205, 219, 219);
+    height: 520px;
+
+}
+
+.main {
+    text-align: center;
+}
+
+.main p {
+    margin-bottom: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background: antiquewhite;
+    width: 70%;
+    /* margin: 0 auto; */
+    margin-left: 140px;
+    padding: 15px;
+    border-radius: 10px;
+}
+
+.main h5 {
+    width: 52%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.main form {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* margin-bottom: 60px; */
+    width: 44%;
+    margin: 0 auto;
+    /* border: 1px solid #000; */
+    padding-top: 35px;
+
+}
+
+.main form input {
+    margin-bottom: 50px;
+    margin-left: 35px;
+
+
+
+}
+
+.main form label {
+    margin-left: 14px;
+    color: aliceblue;
+    padding: 14px 97px;
+    background: rgb(121, 180, 228);
+    margin-bottom: 40px;
+    border: 1px solid #000;
+}
+
+button {
+    padding: 10px 50px;
+    font-size: 15px;
+    font-weight: bold;
+    background: darkgoldenrod;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 20px;
+    font-weight: bold;
+    /* background: rgb(205, 219, 219); */
+    /* margin-left: 50px; */
+}
+.main form label :nth-child(2) {
+        padding: 10px;
+}

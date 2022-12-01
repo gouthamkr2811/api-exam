@@ -25,6 +25,7 @@ const Emg = styled(Link)`
     border-radius: 14px;
     margin-right: 15px;
     text-decoration: none;
+    color: aqua;
 `;
 const Mal = styled(Link)`
      background: rebeccapurple;
@@ -32,5 +33,7 @@ const Mal = styled(Link)`
     font-size: 30px;
     border-radius: 14px;
     text-decoration: none;
+    color: aqua;
+
 
 `;

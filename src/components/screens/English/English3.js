@@ -26,7 +26,7 @@ const render=(item)=>{
 
         return (
           <div>
-        <input type="radio" name="colors" id="red"/>
+        <input type="radio" name="colors" value={i.id} id="red"/>
         <label for="">{i.answer_text}</label>
         </div>
         )
@@ -60,4 +60,7 @@ const Button = styled(Link)`
     font-weight: bold;
     background: darkgoldenrod;
     margin-bottom: 40px;
+    text-decoration: none;
+    margin-right: 57px;
+
 `;

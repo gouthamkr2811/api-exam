@@ -55,9 +55,11 @@ const render=(item)=>{
 // export default English
 
 const Button = styled(Link)`
-   padding: 10px 50px;
+   padding: 10px 60px;
     font-size: 15px;
     font-weight: bold;
     background: darkgoldenrod;
     margin-bottom: 40px;
+    text-decoration: none;
+
 `;

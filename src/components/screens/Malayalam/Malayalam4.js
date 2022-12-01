@@ -60,4 +60,6 @@ const Button = styled(Link)`
     font-weight: bold;
     background: darkgoldenrod;
     margin-bottom: 40px;
+    text-decoration: none;
+
 `;

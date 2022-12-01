@@ -3,17 +3,17 @@ import react from 'react'
 import './Header.css' 
 import {Link} from 'react-router-dom';
 
-
-
-// import sample from './sample.mp4'
-
-
 import React from 'react'
 import styled from 'styled-components'
+
+import back from "../../../assets/video/4K_15.mp4"
   
   function Header() {
     return (
       <section id="main">
+         <video className='videoTag' autoPlay loop muted>
+          <source src={back} type='video/mp4' />
+          </video> 
       <section id="header" className='wrapper'>
       <div className="nav-left">
         <h1>
@@ -31,9 +31,7 @@ import styled from 'styled-components'
        <Star to="/starts">START</Star>
      </div>
      </section>
-          {/* <video className='videoTag' autoPlay loop muted>
-          <source src={sample} type='video/mp4' />
-          </video> */}
+          
      </section>
 
     )

@@ -57,7 +57,7 @@ function Login() {
 
             <p className="error-message">{errMessage && errMessage["detail"]}</p>   
             <button type="submit">Login</button>
-            <Create to="/sing">Create Account</Create>
+            {/* <Create to="/sing">Create Account</Create> */}
         </form>
     </section>
   );
